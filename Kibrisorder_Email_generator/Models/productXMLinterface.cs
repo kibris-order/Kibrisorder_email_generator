@@ -30,9 +30,17 @@ namespace Kibrisorder_Email_generator.Models
             xdoc.Save(pathToXMLfile);
         }
 
+        public void updateAllFields(Product mProduct)
+        {
+            updatingPrice(mProduct.id, mProduct.price);
+            updatingCurrency(mProduct.id, mProduct.currency);
+            updatingName(mProduct.id, mProduct.name);
+                updatingImgUrl(mProduct.id, mProduct.img_url);
+            updatingProductUrl(mProduct.id, mProduct.product_url);
+        }
 
 
-        public void updatingPrice(String id, double price)
+        public void updatingPrice(String id, String price)
         {
             xdoc.Element("products")
                 .Elements("product")
