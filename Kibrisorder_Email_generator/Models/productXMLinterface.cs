@@ -8,7 +8,7 @@ namespace Kibrisorder_Email_generator.Models
 {
     public class productXMLinterface
     {
-        productXMLinterface(XDocument xdoc, String pathToXMLfile)
+        public productXMLinterface(XDocument xdoc, String pathToXMLfile)
         {
             this.xdoc = xdoc;
             this.pathToXMLfile = pathToXMLfile;
@@ -18,13 +18,13 @@ namespace Kibrisorder_Email_generator.Models
         public  XDocument xdoc { get; set; }
 
 
-        public void removeAllXMLelements()
+        public void removeAllProducts()
         {
             xdoc.Root.Elements().Remove();
             xdoc.Save(pathToXMLfile);
         }
 
-        public void removeXMLelement(String id)
+        public void removeProduct(String id)
         {
             xdoc.Root.Elements().Where(x => x.Attribute("id").Value == id).FirstOrDefault().Remove();
             xdoc.Save(pathToXMLfile);
@@ -37,6 +37,14 @@ namespace Kibrisorder_Email_generator.Models
             xdoc.Element("products")
                 .Elements("product")
                 .Where(x => x.Attribute("id").Value == id).FirstOrDefault().SetElementValue("price", price);
+            xdoc.Save(pathToXMLfile);
+        }
+
+        public void updatingCurrency(String id, String currency)
+        {
+            xdoc.Element("products")
+                .Elements("product")
+                .Where(x => x.Attribute("id").Value == id).FirstOrDefault().Element("price").SetAttributeValue("currency", currency);
             xdoc.Save(pathToXMLfile);
         }
 
@@ -65,7 +73,7 @@ namespace Kibrisorder_Email_generator.Models
             xdoc.Save(pathToXMLfile);
         }
 
-        public void addingNewXMLelements(Product product)
+        public void AddNewProduct(Product product)
         {
             xdoc.Element("products").Add(
                 new XElement("product", new XAttribute("id", product.id),
@@ -130,8 +138,8 @@ namespace Kibrisorder_Email_generator.Models
                     product.currency = p.currency;
                     product.img_url = p.img_url;
                     product.product_url = p.product_url;
-
                     
+
                 });
             return product;
 
