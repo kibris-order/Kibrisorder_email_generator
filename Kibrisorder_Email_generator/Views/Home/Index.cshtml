@@ -1,14 +1,51 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    var items = Model;
+
+
+    //public String id { get; set; }
+    //public String name { get; set; }
+    //public String price { get; set; }
+    //public String currency { get; set; }
+    //public String img_url { get; set; }
+    //public String product_url { get; set; }
 }
 
+<div style="margin-top:30px" class=" pull-right">
+    @* @Html.ActionLink("Add new", "Index", "Add", null, new { @class = "btn btn-primary" })*@
+    <button class="btn btn-primary"  disabled>Add New</button>
+    <button class="btn btn-danger" id="btnDeleteAll" disabled>Delete All</button>
+</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2> Kibris order email generator</h2>
-       <input type="button" id="generator" value="generator" />
+@foreach (var product in items)
+{
+
+<div class="row" style="margin-top:30px">
+    <div class="col-md-12">
+        <div class="col-md-4">
+
+            <img class="media-object" src="@product.img_url" height="150px" width="150px" alt="...">
+            @Html.ActionLink("Edit", "Index", "Edit",  new { product_id = product.id}, new { @class = "btn btn-primary" })
+            <button class="btn btn-danger btnDeleteSpecific" disabled value="@product.id" >Delete </button>
+
+        </div>
+
+        <div class="col-md-8">
+            <h4>ID: @product.id</h4>
+            <h4>name: @product.name</h4>
+            <h4>price: @product.price</h4>
+            <h4>currency: @product.currency</h4>
+            <h4>img url: <a href="@product.img_url">@product.img_url</a></h4>
+            <h4>link url: <a href="@product.product_url">@product.product_url</a></h4>
+
+        </div>
     </div>
 
-   
+
 </div>
+<hr />
+
+
+}
+
 

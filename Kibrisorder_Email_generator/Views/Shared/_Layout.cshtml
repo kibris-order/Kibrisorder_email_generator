@@ -41,6 +41,71 @@
     <script>
         var textFile = null;
 
+        $("#btnDeleteAll").click(function () {
+
+            if (confirm("You are about to delete all products")) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/DeleteAll",
+                   
+                    success: function (result) {
+                        alert("all products deleted");
+                        location.reload();
+                   }
+                })
+            }
+
+   
+
+        });
+
+        $(".btnDeleteSpecific").click(function () {
+
+            if (confirm("You are about to delete product" +this.value)) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/DeleteSpecificProduct/" + this.value,
+                    data: {
+                        product_id: this.value,
+                        
+
+                    },
+                    success: function (result) {
+                        alert("Product deleted");
+                        location.reload();
+                   }
+                })
+            }
+
+        });
+
+
+        $("#btnEditUpdate").click(function () {
+          
+            $('#hiddenLanguageId').val();
+            if (confirm("Are you sure you want to update product" + this.value)) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Edit/UpdateProduct/",
+                    data: {
+                       
+                        id: $('#product_id').val(),
+                        name: $('#product_name').val(),
+                        price: $('#product_price').val(),
+                        currency: $('#product_currency').val(),
+                        img_url: $('#product_img_url').val(),
+                        product_url: $('#product_url').val()
+
+                    },
+                    success: function (result) {
+                        alert("Product has been updated");
+                        location.reload();
+                    }
+                })
+            }
+
+        });
+
     $('#generator').click(function () {
              alert("hello Responsiveness");
             // search_main();
