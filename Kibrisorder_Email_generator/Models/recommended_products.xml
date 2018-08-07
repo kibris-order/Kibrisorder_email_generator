@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<products>
+  <product id="105">
+    <name> new product</name>
+    <price currency="USD">2899</price>
+    <img_url>https://www.kibrisorder.com/img</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+
+  <product id="106">
+    <name> new product</name>
+    <price currency="USD">2899</price>
+    <img_url>https://www.kibrisorder.com/img</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+
+  <product id="107">
+    <name> new product</name>
+    <price currency="USD">2899</price>
+    <img_url>https://www.kibrisorder.com/img</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+
+  <product id="108">
+    <name> new product</name>
+    <price currency="USD">2899</price>
+    <img_url>https://www.kibrisorder.com/img</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+  
+</products>
