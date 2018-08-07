@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var product = Model;
+}
+
+
+<div class="col-md-12" style="margin-top:30px">
+    <h3>Edit product detail</h3>
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="input-group">
+
+                <label>product id</label>
+
+                <input type="text" class="form-control disabled" id="product_id" disabled value="@product.id">
+
+
+            </div>
+            <br />
+            <br />
+            <div class="input-group">
+
+                <label>product name</label>
+                <input type="text" class="form-control " id="product_name" value="@product.name">
+
+            </div>
+
+
+
+            <br />
+            <br />
+
+
+            <div class="input-group">
+                <label>product Price</label>
+                <input type="text" class="form-control " id="product_price" value="@product.price">
+
+            </div>
+
+
+
+            <br />
+            <br />
+
+
+            <div class="input-group">
+
+                <label>product Currency</label>
+                <input type="text" class="form-control " id="product_currency" value="@product.currency">
+
+            </div>
+
+
+
+            <br />
+            <br />
+
+
+
+
+
+            <div class="input-group">
+                <label>product image url</label>
+                <input type="text" class="form-control " id="product_img_url" value="@product.img_url">
+
+            </div>
+            <br />
+            <br />
+
+            <div class="input-group">
+
+                <label>product product url</label>
+                <input type="text" class="form-control " id="product_url" value="@product.product_url">
+
+            </div>
+            <br />
+            <br />
+
+
+            <div class="pull-right">
+                <button class="btn btn-primary" value="@product.id" id="btnEditUpdate">Update</button>
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <img class="media-object" src="@product.img_url" height="450px" width="450px" alt="...">
+
+        </div>
+    </div>
+</div>
+
