@@ -63,31 +63,13 @@ namespace Kibrisorder_Email_generator.Controllers
             XDocument xdoc = XDocument.Load(xmlDocPath);
             productXMLinterface context = new productXMLinterface(xdoc, xmlDocPath);
 
-            Product product = new Product();
-            product = context.GetProduct("989");
 
             List<Product> products = new List<Product>();
             products = context.GetAllProducts();
 
-            Product newProduct = new Product
-            {id="148",
-            name = "newly Added product",
-            price ="1234",
-            currency="USD",
-            img_url="https//imgUrl",
-            product_url="http//product_url"
-            };
-
-
-            //context.AddNewProduct(newProduct);
-
-            // context.updatingName("148", "MusaProduct");
-            //   context.updatingCurrency("148", "AUD");
-            context.removeXMLelement("148");
-
-            int x = 0;
-            x++;
-            return View("View", product);
+           
+        
+            return View("View", products);
         }
     }
 }
