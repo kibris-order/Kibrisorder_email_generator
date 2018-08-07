@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System;
+using System.Xml.Linq;
 using System.Drawing;
 using System.Resources;
 using System.Web.Mvc;
-
+using Kibrisorder_Email_generator.Models;
 namespace Kibrisorder_Email_generator.Controllers
 {
     public class EmailGeneratorController : Controller
@@ -57,7 +58,36 @@ namespace Kibrisorder_Email_generator.Controllers
 
             ViewBag.shared_buy_now_button = Resources.product_recommendation_data_supermarket.shared_buy_now_button;
 
-            return View("View");
+            String xmlDocPath = Server.MapPath("~/Content/recommended_products.xml"); 
+
+            XDocument xdoc = XDocument.Load(xmlDocPath);
+            productXMLinterface context = new productXMLinterface(xdoc, xmlDocPath);
+
+            Product product = new Product();
+            product = context.GetProduct("989");
+
+            List<Product> products = new List<Product>();
+            products = context.GetAllProducts();
+
+            Product newProduct = new Product
+            {id="148",
+            name = "newly Added product",
+            price ="1234",
+            currency="USD",
+            img_url="https//imgUrl",
+            product_url="http//product_url"
+            };
+
+
+            //context.AddNewProduct(newProduct);
+
+            // context.updatingName("148", "MusaProduct");
+            //   context.updatingCurrency("148", "AUD");
+            context.removeXMLelement("148");
+
+            int x = 0;
+            x++;
+            return View("View", product);
         }
     }
 }
