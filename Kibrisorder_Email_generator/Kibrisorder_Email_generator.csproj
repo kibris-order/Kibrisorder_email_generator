@@ -144,9 +144,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\product_recommendation_data_supermarket.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>product_recommendation_data_supermarket.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmailGeneratorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -189,9 +195,14 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout_fashion_layout.cshtml" />
+    <Content Include="Views\Shared\_Layout_supermarket_layout.cshtml" />
+    <Content Include="Views\EmailGenerator\View.cshtml" />
+    <Content Include="Views\supermarket_email_sections\_footer_supermarket.cshtml" />
+    <Content Include="Views\supermarket_email_sections\_promo_section.cshtml" />
+    <Content Include="Views\supermarket_email_sections\_product_recommendation_section.cshtml" />
+    <Content Include="Views\supermarket_email_sections\_logo_header_section.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -209,6 +220,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\product_recommendation_data_supermarket.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>product_recommendation_data_supermarket.designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout_supermarket_layout.cshtml";
+}
+
+<div id="body_header" class='movableContent'>
+    <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
+        <tr>
+            <td width="50">&nbsp;</td>
+            <td width="500" colspan="3" align="center" style="padding-bottom:10px;padding-top:25px;">
+                <div class="contentEditableContainer contentTextEditable">
+                    <div class="contentEditable">
+                        <h2>	%Store.Name%. Wishlist</h2>
+                    </div>
+                </div>
+            </td>
+            <td width="50">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="50">&nbsp;</td>
+            <td width="500" align="center">
+                <div class="contentEditableContainer contentTextEditable">
+
+                </div>
+            </td>
+            <td width="50">&nbsp;</td>
+        </tr>
+    </table>
+</div>
+
+<div id="body_main" class='movableContent'>
+    <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
+        <tr>
+            <td width="50">&nbsp;</td>
+            <td width="500" align="left" style="padding-bottom:15px;">
+                <div class="contentEditableContainer contentTextEditable">
+                    <div class="contentEditable">
+
+                        <p>
+
+                            %Wishlist.Email% was shopping on %Store.Name% and wanted to share a wishlist with you.
+                            <br />
+                            <br />
+                            <br />
+                            For more info click <a target="_blank" href="%Wishlist.URLForCustomer%">here</a>
+                            <br />
+                            <br />
+                            <br />
+                            %Wishlist.PersonalMessage%
+                            <br />
+                            <br />
+                            %Store.Name%
+                        </p>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </td>
+            <td width="50">&nbsp;</td>
+        </tr>
+    </table>
+</div>
+
+<div id="body_footer" class='movableContent'>
+    <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
+        <tr>
+            <td width="50">&nbsp;</td>
+            <td width="500" align="left" style="padding-bottom:15px;">
+                <div class="contentEditableContainer contentTextEditable">
+                    <div class="contentEditable">
+                        <p>
+                            Best regards<br>
+                            <strong>Kibris Order Team</strong><br />
+
+                        </p>
+                    </div>
+                </div>
+            </td>
+            <td width="50">&nbsp;</td>
+        </tr>
+    </table>
+</div>
+
+<div id="empty_space" class='movableContent'>
+    <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
+        <tr>
+            <td width="50">&nbsp;</td>
+            <td width="500" align="left" style="padding-bottom:15px;">
+                <div class="contentEditableContainer contentTextEditable">
+                    <div class="contentEditable">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </td>
+            <td width="50">&nbsp;</td>
+        </tr>
+    </table>
+</div>
+<hr>
