@@ -9,8 +9,38 @@
   <product id="989">
     <name> 989new product</name>
     <price currency="USD">92899</price>
-    <img_url>http://supermarket.kibrisorder.com/images/thumbs/0001685_nutella-750g.jpeg</img_url>
+    <img_url>https://www.kibrisorder.com/images/thumbs/0009046_dreamy-beaded-earrings_415.jpeg</img_url>
     <buy_now_url>https://989www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+  <product id="107">
+    <name>Updated new product</name>
+    <price currency="USD">2899</price>
+    <img_url>https://www.kibrisorder.com/images/thumbs/0009046_dreamy-beaded-earrings_415.jpeg</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+  <product id="107">
+    <name>Updated new product</name>
+    <price currency="USD">2899</price>
+    <img_url>http://supermarket.kibrisorder.com/images/thumbs/0001686_dankek-lokmalik-havuclu-tarcinli.jpeg</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+  <product id="107">
+    <name>Updated new product</name>
+    <price currency="USD">2899</price>
+    <img_url>http://supermarket.kibrisorder.com/images/thumbs/0001686_dankek-lokmalik-havuclu-tarcinli.jpeg</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+  <product id="107">
+    <name>Updated new product</name>
+    <price currency="USD">2899</price>
+    <img_url>http://supermarket.kibrisorder.com/images/thumbs/0001686_dankek-lokmalik-havuclu-tarcinli.jpeg</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
+  </product>
+  <product id="107">
+    <name>Updated new product</name>
+    <price currency="USD">2899</price>
+    <img_url>http://supermarket.kibrisorder.com/images/thumbs/0001686_dankek-lokmalik-havuclu-tarcinli.jpeg</img_url>
+    <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
   </product>
   <product id="107">
     <name>Updated new product</name>
@@ -19,8 +49,8 @@
     <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
   </product>
   <product id="108">
-    <name> new product</name>
-    <price currency="USD">2899</price>
+    <name> new productl</name>
+    <price currency="USD">2,894.00</price>
     <img_url>http://supermarket.kibrisorder.com/images/thumbs/0001341_superfresh-garnish-canned-food.jpeg</img_url>
     <buy_now_url>https://www.kibrisorder.com/buyNow</buy_now_url>
   </product>

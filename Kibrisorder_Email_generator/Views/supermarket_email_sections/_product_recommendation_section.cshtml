@@ -1,4 +1,10 @@
-﻿
+﻿@{
+    int count = 1;
+    var items = Model;
+    var tag = "</tr>";
+    var tag2 = "<td width='6'></td>";
+    var tagOpen = " <tr>";
+}
 <div class='movableContent'>
     <table width="600" border="0" cellspacing="0" cellpadding="0">
         <tr><td height='5'></td></tr>
@@ -26,344 +32,96 @@
 </div>
 
 
+
+
+
 <div class='movableContent'>
     <table width="600" border="0" cellspacing="0" cellpadding="0">
         <tr><td height='6px'></td></tr>
         <tr>
-            <td width='176'>
-                <table width="176" border="0" cellspacing="0" cellpadding="0" style='border:1px solid #EBE3E3;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
-                    <tr><td height='18' colspan='3'></td></tr>
-                    <tr>
-                        <td width='18'></td>
-                        <td>
-                            <table width="140" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align='center'>
-                                        <div class="contentEditableContainer contentImageEditable">
-                                            <div class="contentEditable">
-                                                <img src="@ViewBag.product_4_image_url" data-default="placeholder" data-max-width="365" width='136' height='115' alt='Shopping Deals'>
-                                            </div>
-                                        </div>
 
-                                    </td>
-                                </tr>
-                                <tr><td height='30'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='font-size:14px;color:#000000;font-weight:bold;'>@ViewBag.product_4_product_name </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='12'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='color:#999999;font-size:18px;font-weight:bold;'>@ViewBag.product_4_price @ViewBag.product_4_currency_symbol</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='25'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <a target='_blank' class='link2' href="@ViewBag.product_4_buy_now_link">@ViewBag.shared_buy_now_button</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td width='18'></td>
-                    </tr>
-                    <tr><td height='25' colspan='3'></td></tr>
-                </table>
-            </td>
-            <td width='6'></td>
-            <td width='176'>
-                <table width="176" border="0" cellspacing="0" cellpadding="0" style='border:1px solid #EBE3E3;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
-                    <tr><td height='18' colspan='3'></td></tr>
-                    <tr>
-                        <td width='18'></td>
-                        <td>
-                            <table width="140" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align='center'>
-                                        <div class="contentEditableContainer contentImageEditable">
-                                            <div class="contentEditable">
-                                                <img src="@ViewBag.product_5_image_url" data-default="placeholder" data-max-width="365" width='136' height='115' alt='Shopping Deals'>
-                                            </div>
-                                        </div>
 
-                                    </td>
-                                </tr>
-                                <tr><td height='30'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='font-size:14px;color:#000000;font-weight:bold;'>@ViewBag.product_5_product_name </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='12'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='color:#999999;font-size:18px;font-weight:bold;'>@ViewBag.product_5_price @ViewBag.product_5_currency_symbol</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='25'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <a target='_blank' href="@ViewBag.product_5_buy_now_link" class='link2'>@ViewBag.shared_buy_now_button</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td width='18'></td>
-                    </tr>
-                    <tr><td height='25' colspan='3'></td></tr>
-                </table>
-            </td>
-            <td width='6'></td>
-            <td width='176'>
-                <table width="176" border="0" cellspacing="0" cellpadding="0" style='border:1px solid #EBE3E3;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
-                    <tr><td height='18' colspan='3'></td></tr>
-                    <tr>
-                        <td width='18'></td>
-                        <td>
-                            <table width="140" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align='center'>
-                                        <div class="contentEditableContainer contentImageEditable">
-                                            <div class="contentEditable">
-                                                <img src="@ViewBag.product_6_image_url" data-default="placeholder" data-max-width="365" width='136' height='115' alt='Shopping Deals'>
-                                            </div>
-                                        </div>
+            @*loop starts here*@
 
-                                    </td>
-                                </tr>
-                                <tr><td height='30'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='font-size:14px;color:#000000;font-weight:bold;'>@ViewBag.product_6_product_name</p>
+            @foreach (var product in items)
+            {
+                if (count == 4)
+                {
+                @:</tr>
+                @:<tr><td height='16px'></td></tr>
+                @:<tr>
+                    count = 1;
+
+
+                }
+
+                <td width='176'>
+                    <table width="176" border="0" cellspacing="0" cellpadding="0" style='border:1px solid #EBE3E3;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
+                        <tr><td height='18' colspan='3'></td></tr>
+                        <tr>
+                            <td width='18'></td>
+                            <td>
+                                <table width="140" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align='center'>
+                                            <div class="contentEditableContainer contentImageEditable">
+                                                <div class="contentEditable">
+                                                    <img src="@product.img_url" data-default="placeholder" data-max-width="365" width='136' height='115' alt='Shopping Deals'>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='12'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='color:#999999;font-size:18px;font-weight:bold;'>@ViewBag.product_6_price @ViewBag.product_6_currency_symbol</p>
+
+                                        </td>
+                                    </tr>
+                                    <tr><td height='30'></td></tr>
+                                    <tr>
+                                        <td>
+                                            <div class="contentEditableContainer contentTextEditable">
+                                                <div class="contentEditable">
+                                                    <p style='font-size:14px;color:#000000;font-weight:bold;'>@product.name</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='25'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <a target='_blank' href="@ViewBag.product_6_buy_now_link" class='link2'>@ViewBag.shared_buy_now_button</a>
+                                        </td>
+                                    </tr>
+                                    <tr><td height='12'></td></tr>
+                                    <tr>
+                                        <td>
+                                            <div class="contentEditableContainer contentTextEditable">
+                                                <div class="contentEditable">
+                                                    <p style='color:#999999;font-size:18px;font-weight:bold;'>@product.price @product.currency</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td width='18'></td>
-                    </tr>
-                    <tr><td height='25' colspan='3'></td></tr>
-                </table>
-            </td>
+                                        </td>
+                                    </tr>
+                                    <tr><td height='25'></td></tr>
+                                    <tr>
+                                        <td>
+                                            <div class="contentEditableContainer contentTextEditable">
+                                                <div class="contentEditable">
+                                                    <a target='_blank' class='link2' href="@product.product_url">Buy now</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width='18'></td>
+                        </tr>
+                        <tr><td height='25' colspan='3'></td></tr>
+                    </table>
+                </td>
+                <td width='6'></td>
+
+
+
+
+
+                count++;
+
+                @*loop ends here*@
+            }
 
         </tr>
 
-        <tr><td height='10px'></td></tr>
 
-        <tr>
-            <td width='176'>
-                <table width="176" border="0" cellspacing="0" cellpadding="0" style='border:1px solid #EBE3E3;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
-                    <tr><td height='18' colspan='3'></td></tr>
-                    <tr>
-                        <td width='18'></td>
-                        <td>
-                            <table width="140" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align='center'>
-                                        <div class="contentEditableContainer contentImageEditable">
-                                            <div class="contentEditable">
-                                                <img src="@ViewBag.product_4_image_url" data-default="placeholder" data-max-width="365" width='136' height='115' alt='Shopping Deals'>
-                                            </div>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr><td height='30'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='font-size:14px;color:#000000;font-weight:bold;'>@ViewBag.product_4_product_name </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='12'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='color:#999999;font-size:18px;font-weight:bold;'>@ViewBag.product_4_price @ViewBag.product_4_currency_symbol</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='25'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <a target='_blank' class='link2' href="@ViewBag.product_4_buy_now_link">@ViewBag.shared_buy_now_button</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td width='18'></td>
-                    </tr>
-                    <tr><td height='25' colspan='3'></td></tr>
-                </table>
-            </td>
-            <td width='6'></td>
-            <td width='176'>
-                <table width="176" border="0" cellspacing="0" cellpadding="0" style='border:1px solid #EBE3E3;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
-                    <tr><td height='18' colspan='3'></td></tr>
-                    <tr>
-                        <td width='18'></td>
-                        <td>
-                            <table width="140" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align='center'>
-                                        <div class="contentEditableContainer contentImageEditable">
-                                            <div class="contentEditable">
-                                                <img src="@ViewBag.product_5_image_url" data-default="placeholder" data-max-width="365" width='136' height='115' alt='Shopping Deals'>
-                                            </div>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr><td height='30'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='font-size:14px;color:#000000;font-weight:bold;'>@ViewBag.product_5_product_name </p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='12'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='color:#999999;font-size:18px;font-weight:bold;'>@ViewBag.product_5_price @ViewBag.product_5_currency_symbol</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='25'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <a target='_blank' href="@ViewBag.product_5_buy_now_link" class='link2'>@ViewBag.shared_buy_now_button</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td width='18'></td>
-                    </tr>
-                    <tr><td height='25' colspan='3'></td></tr>
-                </table>
-            </td>
-            <td width='6'></td>
-            <td width='176'>
-                <table width="176" border="0" cellspacing="0" cellpadding="0" style='border:1px solid #EBE3E3;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px'>
-                    <tr><td height='18' colspan='3'></td></tr>
-                    <tr>
-                        <td width='18'></td>
-                        <td>
-                            <table width="140" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align='center'>
-                                        <div class="contentEditableContainer contentImageEditable">
-                                            <div class="contentEditable">
-                                                <img src="@ViewBag.product_6_image_url" data-default="placeholder" data-max-width="365" width='136' height='115' alt='Shopping Deals'>
-                                            </div>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr><td height='30'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='font-size:14px;color:#000000;font-weight:bold;'>@ViewBag.product_6_product_name</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='12'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <p style='color:#999999;font-size:18px;font-weight:bold;'>@ViewBag.product_6_price @ViewBag.product_6_currency_symbol</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr><td height='25'></td></tr>
-                                <tr>
-                                    <td>
-                                        <div class="contentEditableContainer contentTextEditable">
-                                            <div class="contentEditable">
-                                                <a target='_blank' href="@ViewBag.product_6_buy_now_link" class='link2'>@ViewBag.shared_buy_now_button</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td width='18'></td>
-                    </tr>
-                    <tr><td height='25' colspan='3'></td></tr>
-                </table>
-            </td>
-        </tr>
     </table>
 </div>

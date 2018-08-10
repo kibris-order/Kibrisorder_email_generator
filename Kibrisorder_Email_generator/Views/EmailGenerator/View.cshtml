@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "View";
     Layout = "~/Views/Shared/_Layout_supermarket_layout.cshtml";
+    var products = Model;
 }
 
 <div id="body_header" class='movableContent'>
@@ -106,3 +107,5 @@
     </table>
 </div>
 <hr>
+@*product recommendation section*@
+@RenderPage("~/Views/supermarket_email_sections/_product_recommendation_section.cshtml", products)

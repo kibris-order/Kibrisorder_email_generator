@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pull-right"  style="margin-top:30px;">
+    <button class="btn btn-primary ">Open all emails in new tabs</button> <button class="btn btn-success ">Export All emails</button>
+</div>
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+
+    <div class="panel-body">
+
+        <p>List of all Emails that can be viewed and exported</p>
+    </div>
+
+    <!-- List group -->
+    <ul class="list-group">
+        <li class="list-group-item">
+            Email title | Email subject
+            <div class="pull-right">
+                @Html.ActionLink("View", "Generator", "EmailGenerator", null, new { @class = "btn btn-primary" })
+                <button class="btn btn-success ">Export</button>
+            </div>
+
+        </li>
+        
+
+    </ul>
+</div>
+
